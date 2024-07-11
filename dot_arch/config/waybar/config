@@ -30,8 +30,8 @@
     },
     "clock": {
         "interval": 1,
-        "format": "\uf017 {:%H:%M}",
-        "format-alt": "\uf133 {:%Y-%m-%d %H:%M:%S}"
+        "format": "\uf017 {:%H:%M:%S} HKT",
+        "format-alt": "\uf133 {:%Y-%m-%d %H:%M:%S} HKT"
     },
     "network": {
         "interval": 1,
