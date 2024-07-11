@@ -96,21 +96,6 @@ rm -rf $DIR_mako
 ln -s $HOME/dotfiles/dot_arch/config/mako $DIR_mako
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
-# Check '.config/neofetch'
-DIR_neofetch="$HOME/.config/neofetch"
-if [ -d $DIR_neofetch ]; then
-  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/neofetch' directory..."
-  echo -e "Backing up current '.config/neofetch' directory..."
-  cp -r $DIR_neofetch "./backup/$DIR_current_time"
-  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-else
-  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/neofetch' directory..."
-fi
-echo -e "Ready to configure with new '.config/neofetch' directory."
-rm -rf $DIR_neofetch
-ln -s $HOME/dotfiles/dot_arch/config/neofetch $DIR_neofetch
-echo -e "[ \033[32;1mDONE\033[0m ] Configured."
-
 # Check '.config/nvim'
 DIR_nvim="$HOME/.config/nvim"
 if [ -d $DIR_nvim ]; then
