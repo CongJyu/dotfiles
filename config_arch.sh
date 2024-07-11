@@ -6,17 +6,17 @@ echo -e "Ready to setup and configure all your dotfiles for your \033[34;1mArch\
 
 # Backup folder.
 
-DIR_backup="./backup"
+DIR_backup="$HOME/dotfiles/backup"
 if [ -d $DIR_backup ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking 'backup' directory..."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[m ] Checking 'backup' directory..."
   echo -e "Making 'backup' directory now."
-  mkdir "./backup"
+  mkdir "$HOME/dotfiles/backup"
 fi
 DIR_current_time="$(date)"
 echo -e "The current time is $DIR_current_time, making a backup directory."
-mkdir "./backup/$DIR_current_time"
+mkdir "$HOME/dotfiles/backup/$DIR_current_time"
 echo -e "[ \033[32;1mDONE\033[0m ] The 'backup' directory is created."
 
 # Check original dotfiles.
@@ -26,7 +26,7 @@ FILE_zshrc="$HOME/.zshrc"
 if [ -f $FILE_zshrc ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.zshrc' file..."
   echo -e "Backing up current '.zshrc' file..."
-  cp $FILE_zshrc "./backup/$DIR_current_time"
+  cp $FILE_zshrc "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zshrc' file..."
@@ -41,7 +41,7 @@ FILE_zprofile="$HOME/.zprofile"
 if [ -f $FILE_zprofile ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.zprofile' file..."
   echo -e "Backing up current '.zprofile' file..."
-  cp $FILE_zprofile "./backup/$DIR_current_time"
+  cp $FILE_zprofile "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zprofile' file..."
@@ -56,7 +56,7 @@ DIR_hypr="$HOME/.config/hypr"
 if [ -d $DIR_hypr ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/hypr' directory..."
   echo -e "Backing up current '.config/hypr' directory..."
-  cp -r $DIR_hypr "./backup/$DIR_current_time"
+  cp -r $DIR_hypr "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/hypr' directory..."
@@ -71,7 +71,7 @@ DIR_kitty="$HOME/.config/kitty"
 if [ -d $DIR_kitty ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/kitty' directory..."
   echo -e "Backing up current '.config/kitty' directory..."
-  cp -r $DIR_kitty "./backup/$DIR_current_time"
+  cp -r $DIR_kitty "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/kitty' directory..."
@@ -86,7 +86,7 @@ DIR_mako="$HOME/.config/mako"
 if [ -d $DIR_mako ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/mako' directory..."
   echo -e "Backing up current '.config/mako' directory..."
-  cp -r $DIR_mako "./backup/$DIR_current_time"
+  cp -r $DIR_mako "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/mako' directory..."
@@ -101,7 +101,7 @@ DIR_nvim="$HOME/.config/nvim"
 if [ -d $DIR_nvim ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/nvim' directory..."
   echo -e "Backing up current '.config/nvim' directory..."
-  cp -r $DIR_nvim "./backup/$DIR_current_time"
+  cp -r $DIR_nvim "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/nvim' directory..."
@@ -116,7 +116,7 @@ DIR_tofi="$HOME/.config/tofi"
 if [ -d $DIR_tofi ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/tofi' directory..."
   echo -e "Backing up current '.config/tofi' directory..."
-  cp -r $DIR_tofi "./backup/$DIR_current_time"
+  cp -r $DIR_tofi "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/tofi' directory..."
@@ -131,7 +131,7 @@ DIR_waybar="$HOME/.config/waybar"
 if [ -d $DIR_waybar ]; then
   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/waybar' directory..."
   echo -e "Backing up current '.config/waybar' directory..."
-  cp -r $DIR_waybar "./backup/$DIR_current_time"
+  cp -r $DIR_waybar "$HOME/dotfiles/backup/$DIR_current_time"
   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
 else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/waybar' directory..."
