@@ -54,20 +54,20 @@ ln -s $HOME/dotfiles/dot_arch/zprofile $FILE_zprofile
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/hypr'
-# DIR_hypr="$HOME/.config/hypr"
-# if [ -d $DIR_hypr ]; then
-#   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/hypr' directory..."
-#   echo -e "Backing up current '.config/hypr' directory..."
-#   cp -r $DIR_hypr "$HOME/dotfiles/backup_arch/$DIR_current_time"
-#   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-# else
-#   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/hypr' directory..."
-# fi
-# echo -e "Ready to configure with new '.config/hypr' directory."
-# unlink $DIR_hypr
-# rm $DIR_hypr
-# ln -s $HOME/dotfiles/dot_arch/config/hypr $DIR_hypr
-# echo -e "[ \033[32;1mDONE\033[0m ] Configured."
+DIR_hypr="$HOME/.config/hypr"
+if [ -d $DIR_hypr ]; then
+  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/hypr' directory..."
+  echo -e "Backing up current '.config/hypr' directory..."
+  cp -r $DIR_hypr "$HOME/dotfiles/backup_arch/$DIR_current_time"
+  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
+else
+  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/hypr' directory..."
+fi
+echo -e "Ready to configure with new '.config/hypr' directory."
+unlink $DIR_hypr
+rm $DIR_hypr
+ln -s $HOME/dotfiles/dot_arch/config/hypr $DIR_hypr
+echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/kitty'
 DIR_kitty="$HOME/.config/kitty"
@@ -86,20 +86,20 @@ ln -s $HOME/dotfiles/dot_arch/config/kitty $DIR_kitty
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/mako'
-# DIR_mako="$HOME/.config/mako"
-# if [ -d $DIR_mako ]; then
-#   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/mako' directory..."
-#   echo -e "Backing up current '.config/mako' directory..."
-#   cp -r $DIR_mako "$HOME/dotfiles/backup_arch/$DIR_current_time"
-#   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-# else
-#   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/mako' directory..."
-# fi
-# echo -e "Ready to configure with new '.config/mako' directory."
-# unlink $DIR_mako
-# rm $DIR_mako
-# ln -s $HOME/dotfiles/dot_arch/config/mako $DIR_mako
-# echo -e "[ \033[32;1mDONE\033[0m ] Configured."
+DIR_mako="$HOME/.config/mako"
+if [ -d $DIR_mako ]; then
+  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/mako' directory..."
+  echo -e "Backing up current '.config/mako' directory..."
+  cp -r $DIR_mako "$HOME/dotfiles/backup_arch/$DIR_current_time"
+  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
+else
+  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/mako' directory..."
+fi
+echo -e "Ready to configure with new '.config/mako' directory."
+unlink $DIR_mako
+rm $DIR_mako
+ln -s $HOME/dotfiles/dot_arch/config/mako $DIR_mako
+echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/nvim'
 DIR_nvim="$HOME/.config/nvim"
@@ -118,33 +118,33 @@ ln -s $HOME/dotfiles/dot_arch/config/nvim $DIR_nvim
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/tofi'
-# DIR_tofi="$HOME/.config/tofi"
-# if [ -d $DIR_tofi ]; then
-#   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/tofi' directory..."
-#   echo -e "Backing up current '.config/tofi' directory..."
-#   cp -r $DIR_tofi "$HOME/dotfiles/backup_arch/$DIR_current_time"
-#   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-# else
-#   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/tofi' directory..."
-# fi
-# echo -e "Ready to configure with new '.config/tofi' directory."
-# unlink $DIR_tofi
-# rm $DIR_tofi
-# ln -s $HOME/dotfiles/dot_arch/config/tofi $DIR_tofi
-# echo -e "[ \033[32;1mDONE\033[0m ] Configured."
+DIR_tofi="$HOME/.config/tofi"
+if [ -d $DIR_tofi ]; then
+  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/tofi' directory..."
+  echo -e "Backing up current '.config/tofi' directory..."
+  cp -r $DIR_tofi "$HOME/dotfiles/backup_arch/$DIR_current_time"
+  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
+else
+  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/tofi' directory..."
+fi
+echo -e "Ready to configure with new '.config/tofi' directory."
+unlink $DIR_tofi
+rm $DIR_tofi
+ln -s $HOME/dotfiles/dot_arch/config/tofi $DIR_tofi
+echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/waybar'
-# DIR_waybar="$HOME/.config/waybar"
-# if [ -d $DIR_waybar ]; then
-#   echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/waybar' directory..."
-#   echo -e "Backing up current '.config/waybar' directory..."
-#   cp -r $DIR_waybar "$HOME/dotfiles/backup_arch/$DIR_current_time"
-#   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-# else
-#   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/waybar' directory..."
-# fi
-# echo -e "Ready to configure with new '.config/waybar' directory."
-# unlink $DIR_waybar
-# rm $DIR_waybar
-# ln -s $HOME/dotfiles/dot_arch/config/waybar $DIR_waybar
-# echo -e "[ \033[32;1mDONE\033[0m ] Configured."
+DIR_waybar="$HOME/.config/waybar"
+if [ -d $DIR_waybar ]; then
+  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/waybar' directory..."
+  echo -e "Backing up current '.config/waybar' directory..."
+  cp -r $DIR_waybar "$HOME/dotfiles/backup_arch/$DIR_current_time"
+  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
+else
+  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/waybar' directory..."
+fi
+echo -e "Ready to configure with new '.config/waybar' directory."
+unlink $DIR_waybar
+rm $DIR_waybar
+ln -s $HOME/dotfiles/dot_arch/config/waybar $DIR_waybar
+echo -e "[ \033[32;1mDONE\033[0m ] Configured."
