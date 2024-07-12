@@ -32,7 +32,8 @@ else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zshrc' file..."
 fi
 echo -e "Ready to configure with new '.zshrc' file."
-rm -rf $FILE_zshrc
+unlink $FILE_zshrc
+rm $FILE_zshrc
 ln -s $HOME/dotfiles/dot_arch/zshrc $FILE_zshrc
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -47,7 +48,8 @@ else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zprofile' file..."
 fi
 echo -e "Ready to configure with new '.zprofile' file."
-rm -rf $FILE_zprofile
+unlink $FILE_zprofile
+rm $FILE_zprofile
 ln -s $HOME/dotfiles/dot_arch/zprofile $FILE_zprofile
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -62,7 +64,8 @@ echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 #   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/hypr' directory..."
 # fi
 # echo -e "Ready to configure with new '.config/hypr' directory."
-rm -rf $DIR_hypr
+# unlink $DIR_hypr
+# rm $DIR_hypr
 # ln -s $HOME/dotfiles/dot_arch/config/hypr $DIR_hypr
 # echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -77,7 +80,8 @@ else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/kitty' directory..."
 fi
 echo -e "Ready to configure with new '.config/kitty' directory."
-rm -rf $DIR_kitty
+unlink $DIR_kitty
+rm $DIR_kitty
 ln -s $HOME/dotfiles/dot_arch/config/kitty $DIR_kitty
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -92,7 +96,8 @@ echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 #   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/mako' directory..."
 # fi
 # echo -e "Ready to configure with new '.config/mako' directory."
-rm -rf $DIR_mako
+# unlink $DIR_mako
+# rm $DIR_mako
 # ln -s $HOME/dotfiles/dot_arch/config/mako $DIR_mako
 # echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -107,7 +112,8 @@ else
   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/nvim' directory..."
 fi
 echo -e "Ready to configure with new '.config/nvim' directory."
-rm -rf $DIR_nvim
+unlink $DIR_nvim
+rm $DIR_nvim
 ln -s $HOME/dotfiles/dot_arch/config/nvim $DIR_nvim
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -122,7 +128,8 @@ echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 #   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/tofi' directory..."
 # fi
 # echo -e "Ready to configure with new '.config/tofi' directory."
-rm -rf $DIR_tofi
+# unlink $DIR_tofi
+# rm $DIR_tofi
 # ln -s $HOME/dotfiles/dot_arch/config/tofi $DIR_tofi
 # echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -137,6 +144,7 @@ rm -rf $DIR_tofi
 #   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/waybar' directory..."
 # fi
 # echo -e "Ready to configure with new '.config/waybar' directory."
-rm -rf $DIR_waybar
+# unlink $DIR_waybar
+# rm $DIR_waybar
 # ln -s $HOME/dotfiles/dot_arch/config/waybar $DIR_waybar
 # echo -e "[ \033[32;1mDONE\033[0m ] Configured."

@@ -32,7 +32,8 @@ else
   echo "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zshrc' file..."
 fi
 echo "Ready to configure with new '.zshrc' file."
-rm -rf $FILE_zshrc
+unlink $FILE_zshrc
+rm $FILE_zshrc
 ln -s $HOME/dotfiles/dot_darwin/zshrc $FILE_zshrc
 echo "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -47,7 +48,8 @@ else
   echo "[ \033[31;1mNOT FOUND\033[0m ] Checking '.zprofile' file..."
 fi
 echo "Ready to configure with new '.zprofile' file."
-rm -rf $FILE_zprofile
+unlink $FILE_zprofile
+rm $FILE_zprofile
 ln -s $HOME/dotfiles/dot_darwin/zprofile $FILE_zprofile
 echo "[ \033[32;1mDONE\033[0m ] Configured."
 
@@ -62,6 +64,6 @@ else
   echo "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/nvim' directory..."
 fi
 echo "Ready to configure with new '.config/nvim' directory."
-rm -rf $DIR_nvim
+unlink $DIR_nvim
 ln -s $HOME/dotfiles/dot_darwin/config/nvim $DIR_nvim
 echo "[ \033[32;1mDONE\033[0m ] Configured."
