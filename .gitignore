@@ -2,3 +2,5 @@ backup_arch
 backup_darwin
 .DS_Store
 **/.DS_Store
+dot_arch/config/nvim/lazy-lock.json
+dot_darwin/config/nvim/lazy-lock.json
