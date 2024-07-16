@@ -70,20 +70,19 @@ ln -s $HOME/dotfiles/dot_arch/config/hypr $DIR_hypr
 echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/kitty'
-DIR_kitty="$HOME/.config/kitty"
-if [ -d $DIR_kitty ]; then
-  echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/kitty' directory..."
-  echo -e "Backing up current '.config/kitty' directory..."
-  cp -r $DIR_kitty "$HOME/dotfiles/backup_arch/$DIR_current_time"
-  echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
-else
-  echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/kitty' directory..."
-fi
-echo -e "Ready to configure with new '.config/kitty' directory."
-unlink $DIR_kitty
-rm $DIR_kitty
-ln -s $HOME/dotfiles/dot_arch/config/kitty $DIR_kitty
-echo -e "[ \033[32;1mDONE\033[0m ] Configured."
+# DIR_kitty="$HOME/.config/kitty"
+# echo -e "[ \033[32;1mFOUND\033[0m ] Checking '.config/kitty' directory..."
+#   echo -e "Backing up current '.config/kitty' directory..."
+#   cp -r $DIR_kitty "$HOME/dotfiles/backup_arch/$DIR_current_time"
+#   echo -e "[ \033[32;1mDONE\033[0m ] Backed up."
+# else
+#   echo -e "[ \033[31;1mNOT FOUND\033[0m ] Checking '.config/kitty' directory..."
+# fi
+# echo -e "Ready to configure with new '.config/kitty' directory."
+# unlink $DIR_kitty
+# rm $DIR_kitty
+# ln -s $HOME/dotfiles/dot_arch/config/kitty $DIR_kitty
+# echo -e "[ \033[32;1mDONE\033[0m ] Configured."
 
 # Check '.config/mako'
 DIR_mako="$HOME/.config/mako"
