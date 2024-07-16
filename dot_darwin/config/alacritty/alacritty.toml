@@ -8,25 +8,25 @@ foreground = '#a9b1d6'
 
 # Normal colors
 [colors.normal]
-black   = '#444b6a'
-red     = '#ff7a93'
-green   = '#b9f27c'
-yellow  = '#ff9e64'
-blue    = '#7da6ff'
-magenta = '#bb9af7'
-cyan    = '#0db9d7'
-white   = '#acb0d0'
+black   = '#424765'
+red     = '#e67d8f'
+green   = '#63b29c'
+yellow  = '#d8b072'
+blue    = '#83a0ec'
+magenta = '#b59bf0'
+cyan    = '#64cae5'
+white   = '#c1c9f1'
 
 # Bright colors
 [colors.bright]
-black   = '#444b6a'
-red     = '#ff7a93'
-green   = '#b9f27c'
-yellow  = '#ff9e64'
-blue    = '#7da6ff'
-magenta = '#bb9af7'
-cyan    = '#0db9d7'
-white   = '#acb0d0'
+black   = '#424765'
+red     = '#e67d8f'
+green   = '#63b29c'
+yellow  = '#d8b072'
+blue    = '#83a0ec'
+magenta = '#b59bf0'
+cyan    = '#64cae5'
+white   = '#c1c9f1'
 
 [cursor.style]
 shape = "Block"
