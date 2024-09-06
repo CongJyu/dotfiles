@@ -21,7 +21,7 @@ export NEMU_HOME=/Users/rainchen/Coding/ics2022/nemu
 export AM_HOME=/Users/rainchen/Coding/ics2022/abstract-machine
 export NPC_HOME=/Users/rainchen/Coding/ics2022/npc
 
-# export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+# export https_proxy=http://127.0.0.1:9910 http_proxy=http://127.0.0.1:9910 all_proxy=socks5://127.0.0.1:9909
 export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
 
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
