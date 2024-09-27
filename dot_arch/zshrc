@@ -23,4 +23,5 @@ export AM_HOME=/home/rainchen/Coding/ics2022/abstract-machine
 export NPC_HOME=/home/rainchen/Coding/ics2022/npc
 
 # export https_proxy=http://192.168.15.145:7890 http_proxy=http://192.168.15.145:7890 all_proxy=socks5://192.168.15.145:7890
+# export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
 
