@@ -1,6 +1,6 @@
 # Written by Rain CongJyu Chen
 
-echo -e "Welcome to \033[34;1mRain's Arch Linux\033[0m! Poweroff command is \033[31;1mNOT ALLOWED\033[0m."
+echo -e "Welcome to \033[34;1mRain's Arch Linux\033[0m!"
 
 autoload -U promptinit
 autoload -U colors && colors
