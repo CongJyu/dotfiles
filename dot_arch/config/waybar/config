@@ -21,7 +21,7 @@
         "on-click": "tofi-drun | xargs hyprctl dispatch exec --"
     },
     "hyprland/window": {
-        "format": "- {} -",
+        "format": "[ {} ]",
         "separate-outputs": true
     },
     "tray": {
@@ -30,32 +30,32 @@
     },
     "clock": {
         "interval": 1,
-        "format": "\uf017 {:%H:%M:%S} HKT",
-        "format-alt": "\uf133 {:%Y-%m-%d %H:%M:%S} HKT"
+        "format": "{:%H:%M:%S} HKT",
+        "format-alt": "{:%Y-%m-%d %H:%M:%S} HKT"
     },
     "network": {
         "interval": 1,
-        "format-wifi": " {essid}",
-        "format-ethernet": "\uf796 {bandwidthUpBits} {bandwidthDownBits}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
-        "tooltip-format": " {ifname} {ipaddr}/{cidr} via {gwaddr}",
+        "format-wifi": "Wi-Fi: {essid}",
+        "format-ethernet": "Ethernet: {bandwidthUpBits} {bandwidthDownBits}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected",
+        "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-bluetooth-muted": "  {icon}",
+        "format-muted": "Muted",
+        "format-bluetooth": "{icon} Bluetooth {volume}%",
+        "format-bluetooth-muted": "Muted: {icon} Bluetooth",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "Headphone",
+            "hands-free": "Hands-free",
+            "headset": "Headset",
+            "phone": "Phone",
+            "portable": "Portable",
+            "car": "Car",
+            "default": ["Quiet", "Middle", "Loud"]
         },
         "on-click-right": "pavucontrol"
     }
