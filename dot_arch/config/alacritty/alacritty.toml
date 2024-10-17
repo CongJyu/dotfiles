@@ -32,7 +32,7 @@ white   = '#c1c9f1'
 shape = "Block"
 
 [font]
-size = 16
+size = 18
 
 [font.bold]
 family = "FiraCode Nerd Font Mono"

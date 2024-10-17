@@ -30,8 +30,8 @@
     },
     "clock": {
         "interval": 1,
-        "format": "{:%H:%M:%S} HKT",
-        "format-alt": "{:%Y-%m-%d %H:%M:%S} HKT"
+        "format": "{:%H:%M} HKT",
+        "tooltip-format": "{:%Y-%m-%d %H:%M} HKT"
     },
     "network": {
         "interval": 1,
